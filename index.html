@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikutech | Developer Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --accent: #00ff41; /* Hacker Green */
+            --text: #c9d1d9;
+            --border: #30363d;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* --- HEADER PROFILE --- */
+        .profile-section {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            padding: 5px;
+            object-fit: cover;
+            /* Replace this with your actual image URL later */
+            background: url('https://github.com/github.png') no-repeat center; 
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: 'JetBrains Mono', monospace;
+            color: white;
+            font-size: 24px;
+            margin: 10px 0 5px 0;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #8b949e;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        /* --- LINKS CONTAINER --- */
+        .links-container {
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-bottom: 50px;
+        }
+
+        .link-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 5px 15px rgba(0, 255, 65, 0.1);
+        }
+
+        /* Highlight for SELLING items */
+        .highlight {
+            border-color: #ffcc00;
+        }
+        .highlight .icon { color: #ffcc00; }
+        .highlight:hover { border-color: #ffe600; box-shadow: 0 5px 15px rgba(255, 204, 0, 0.1); }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: var(--accent);
+            width: 30px;
+            text-align: center;
+        }
+
+        .text-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            color: #8b949e;
+        }
+
+        /* --- SOCIALS FOOTER --- */
+        .socials {
+            margin-top: auto;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .socials a {
+            color: #8b949e;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        .socials a:hover { color: var(--accent); }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-section">
+        <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" class="avatar" alt="Nikutech">
+        <h1>@Nikutech</h1>
+        <p class="bio">Building tools for Frustrated Programmers. 💻 <br> VB6 • SQL • Web</p>
+    </div>
+
+    <div class="links-container">
+        
+        <a href="https://raket.ph/nikutech" target="_blank" class="link-card highlight">
+            <div class="icon"><i class="fa-solid fa-folder-open"></i></div>
+            <div class="text-group">
+                <span class="title">Download Source Codes</span>
+                <span class="subtitle">VB6, SQL, & System Templates</span>
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="link-card">
+            <div class="icon"><i class="fa-solid fa-keyboard"></i></div>
+            <div class="text-group">
+                <span class="title">My Coding Gear</span>
+                <span class="subtitle">Keyboard, Mouse & Desk Setup</span>
+            </div>
+        </a>
+
+        <a href="https://facebook.com/nikutech" target="_blank" class="link-card">
+            <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+            <div class="text-group">
+                <span class="title">Facebook Page</span>
+                <span class="subtitle">Daily Tech Tips & Memes</span>
+            </div>
+        </a>
+
+        <a href="https://tiktok.com/@nikutech" target="_blank" class="link-card">
+            <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
+            <div class="text-group">
+                <span class="title">TikTok Tutorials</span>
+                <span class="subtitle">Short clips & guides</span>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="socials">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+</body>
+</html>
